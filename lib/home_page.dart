@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                     );
                   },
                   child: const Text(
-                    'View Staff',
+                    'View Staff List',
                     style: TextStyle(
                       fontSize: 16, 
                       fontWeight: FontWeight.bold,
