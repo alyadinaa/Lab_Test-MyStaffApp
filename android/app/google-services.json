@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742498293467",
+    "project_id": "labtest-mystaffapp",
+    "storage_bucket": "labtest-mystaffapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742498293467:android:292dee876cfd2188dedefe",
+        "android_client_info": {
+          "package_name": "com.example.mystaffapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoDtZuhe308g0a7InxgW3grPZjwZgdyhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
