@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'home_page.dart';
+import 'add_staff_page.dart';
 
 class ListStaffPage extends StatelessWidget {
   const ListStaffPage({super.key});
@@ -14,8 +14,7 @@ class ListStaffPage extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text(
-              'Cancel', style: TextStyle(color: Colors.black)),
+            child: const Text('Cancel', style: TextStyle(color: Colors.black)),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
@@ -86,7 +85,7 @@ class ListStaffPage extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (_) => const HomePage()),
+            MaterialPageRoute(builder: (_) => const AddStaffPage()),
           ),
         ),
       ),
@@ -161,6 +160,20 @@ class ListStaffPage extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (_) => const AddStaffPage()),
+          );
+        },
+        backgroundColor: const Color(0xFFAE4DFF),
+        icon: const Icon(Icons.person_add),
+        label: const Text(
+          'Add Staff',
+          style: TextStyle(color: Colors.white),
         ),
       ),
     );
